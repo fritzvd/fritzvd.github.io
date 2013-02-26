@@ -1,0 +1,148 @@
+{:	data{"/stylesheet/{:default{:	lastI"* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #f30;
+}
+
+a:hover {
+  color: #f90;
+}
+
+#main {
+  position: absolute;
+
+  top: 40px;
+  left: 280px;
+
+  width: 500px;
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+
+  line-height: 40px;
+
+  letter-spacing: -1px;
+}
+
+#main p {
+  margin: 20px 0;
+
+  font-size: 15px;
+
+  line-height: 20px;
+}
+
+#main ul, #main ol {
+  margin: 20px;
+}
+
+#main li {
+  font-size: 15px;
+
+  line-height: 20px;
+}
+
+#main ul li {
+  list-style-type: square;
+}
+
+#sidebar {
+  position: absolute;
+
+  top: 40px;
+  left: 20px;
+  width: 200px;
+
+  padding: 20px 20px 0 0;
+
+  border-right: 1px solid #ccc;
+
+  text-align: right;
+}
+
+#sidebar h2 {
+  text-transform: uppercase;
+
+  font-size: 13px;
+
+  color: #333;
+
+  letter-spacing: 1px;
+
+  line-height: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+
+  margin: 20px 0;
+}
+
+#sidebar li {
+  font-size: 14px;
+
+  line-height: 20px;
+}
+:ET:raw@
+:pre@
+"/{;{	;I"®<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>fritzvd - Home</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc 3.6.0"> 
+    <meta name="author" content="Fritz van Deventer"> 
+    <meta name="description" edit="fritzvd, python, javascript, frontend, developer, music, singer"> 
+  </head>
+  <body>
+    <div id="main">
+      <h1>I am Fritz</h1>
+
+<p>At the moment I work at Nelen & Schuurmans in Utrecht, the Netherlands.</p>
+<p>Most of the time I'm working on stuff on the web. E.g. <a href="http://github.com/ddsc/webclient">webclients</a>, or tinkering away at <a href="http://github.com/fritzvd">stuff</a>.</p>
+<p>Although I like the digital world, I also really love the analogue. So I play in a <a href="http://soundcloud.com/cheesesofmexico">band</a> and I love to read.</p>
+    </div>
+    <div id="sidebar">
+      <h2>Interwebs</h2>
+      <ul>
+        <li><a href="http://twitter.com/fritzvd">Twitter</a></li>
+        <li><a href="http://github.com/fritzvd">Github</a></li>
+      </ul>
+      <!--<h2>Community</h2>
+      <ul>
+        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
+        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
+        <li><a href="http://github.com/nanoc/nanoc/wiki/">Wiki</a></li>
+      </ul>
+    </div>-->
+  </body>
+</html>
+;T;	I"Ç<h1>I am Fritz</h1>
+
+<p>At the moment I work at Nelen & Schuurmans in Utrecht, the Netherlands.</p>
+<p>Most of the time I'm working on stuff on the web. E.g. <a href="http://github.com/ddsc/webclient">webclients</a>, or tinkering away at <a href="http://github.com/fritzvd">stuff</a>.</p>
+<p>Although I like the digital world, I also really love the analogue. So I play in a <a href="http://soundcloud.com/cheesesofmexico">band</a> and I love to read.</p>;T;
+I"Ç<h1>I am Fritz</h1>
+
+<p>At the moment I work at Nelen & Schuurmans in Utrecht, the Netherlands.</p>
+<p>Most of the time I'm working on stuff on the web. E.g. <a href="http://github.com/ddsc/webclient">webclients</a>, or tinkering away at <a href="http://github.com/fritzvd">stuff</a>.</p>
+<p>Although I like the digital world, I also really love the analogue. So I play in a <a href="http://soundcloud.com/cheesesofmexico">band</a> and I love to read.</p>;T:	post@:versioni
