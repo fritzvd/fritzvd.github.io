@@ -1,2 +1,2 @@
-nanoc/crash.log
-nanoc/tmp/
+node_modules/
+npm-debug.log
