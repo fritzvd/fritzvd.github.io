@@ -1,0 +1,85 @@
+@import './node_modules/skeleton-scss/scss/skeleton.scss';
+@import 'assets/css/print.scss';
+
+@mixin pixelated {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+
+img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] {
+  @include pixelated;
+}
+
+body {
+  background: url('./assets/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  @include pixelated;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 2em;
+  border-bottom: #aaa dashed 2px;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0;
+  background: rgba(255, 255, 255, 0.8)
+}
+
+.header {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+li {
+  margin: 0;
+}
+
+li.skills-list {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 1);
+
+  &:hover {
+    transition: 300ms ease-in;
+    background: rgba(60, 60, 60, 1);
+  }
+}
+
+.profilepic > img{
+  max-width: 100%;
+}
+
+tbody {
+  max-height: 400px;
+}
+
+.fa-svg {
+  height: 14px;
+}
+
+path {
+  fill: $link-color; // from skeleton.scss
+}
