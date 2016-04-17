@@ -34,6 +34,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "phaser": "^2.4.6",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "skeleton-scss": "git+https://github.com/whatsnewsaes/Skeleton-Sass.git"
