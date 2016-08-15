@@ -1,16 +1,19 @@
+var path = require('path')
+
 module.exports = {
-  entry: './cv.js',
+  entry: './game.js',
   output: {
     path: __dirname,
-    filename: 'cv-bundle.js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loaders: ['style', 'css', 'sass']
       },
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
+      { test: /\.json$/, loader: 'json' },
     ]
   }
 }
