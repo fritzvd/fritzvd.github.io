@@ -7,7 +7,6 @@
  * @return {Object}  Head class with helper functions
  */
 
-var LIST_OF_THINGS = require('./listofthings.json')
 var headTextures = [
   PIXI.Texture.fromImage('./assets/head.png'),
   PIXI.Texture.fromImage('./assets/head1.png'),
@@ -16,12 +15,11 @@ var headTextures = [
 var Thing = require('./thing')
 var constants = require('./constants')
 
-function Head (stage) {
-
-  this.x = 200 * Math.random()
-  this.y = 150 * Math.random()
-  xDir = (Math.random() * 0.49) ? -1 : 1
-  yDir = (Math.random() * 0.49) ? -1 : 1
+function Head () {
+  this.x = (constants.WINDOW_WIDTH - 200) * Math.random()
+  this.y = (constants.WINDOW_HEIGHT - 200) * Math.random()
+  xDir = (Math.random() < 0.49) ? -1 : 1
+  yDir = (Math.random() < 0.49) ? -1 : 1
 
   this.xSpeed = 1 + Math.random() * xDir
   this.ySpeed = 1 + Math.random() * yDir
@@ -38,30 +36,8 @@ function Head (stage) {
   // make it clickable
   this.sprite.interactive = true
   this.frame = 0
-  this.stage = stage
 
-  var self = this
-
-  this.sprite
-    .on('mousedown', self.onButtonDown, self)
-    .on('touchstart', self.onButtonDown, self)
-  stage.addChild(self.sprite)
 }
-
-/**
- * popItLikeItsHot - pop something from the LIST_OF_THINGS
- * and animate / gravitate it.
- *
- * The Thing is added to the physics world and displayed in the stage.
- *
- * @return {object}  Thing
- */
-Head.prototype.popItLikeItsHot = function () {
-  var thing = LIST_OF_THINGS.pop()
-  console.log(thing)
-  return new Thing(thing, this.x, this.y, this.stage)
-}
-
 
 /**
  * onButtonDown - callback for the clicks and touches
@@ -70,7 +46,6 @@ Head.prototype.popItLikeItsHot = function () {
  */
 Head.prototype.onButtonDown = function () {
   this.animate()
-  this.popItLikeItsHot()
 }
 
 Head.prototype.update = function () {

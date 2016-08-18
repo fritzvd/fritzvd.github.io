@@ -1,15 +1,17 @@
-function Thing (thing, x, y, stage) {
+function Thing (thing, x, y, physics) {
   var texture = PIXI.Texture.fromImage('./assets/' + thing.name + '.png')
   this.sprite = new PIXI.Sprite(texture)
 
-  this.sprite.x = x
-  this.sprite.y = y
+  this.sprite.position.x = x
+  this.sprite.position.y = y
+  this.sprite.anchor.x = 0.5
+  this.sprite.anchor.y = 0.5
+  this.body = physics
 
   var self = this
   this.sprite
     .on('mousedown', self.onButtonDown, self)
     .on('touchstart', self.onButtonDown, self)
-  stage.addChild(self.sprite)
 }
 
 Thing.prototype.onButtonDown = function () {

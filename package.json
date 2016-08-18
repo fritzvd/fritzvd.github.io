@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --inline --port 3002 --host 127.0.0.1",
-    "build": "webpack -p -progress --colors"
+    "build": "webpack -p -progress --colors",
+    "test": "node tests/eventedarray.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^3.2.3",
     "style-loader": "^0.13.1",
+    "tape": "^4.6.0",
     "transform-loader": "^0.2.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
