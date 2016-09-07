@@ -1,10 +1,30 @@
 [
   {
     "name": "spotify",
-    "url": "https://open.spotify.com/track/1aetqDOKuP3eNttOcgFc0Y"
+    "url": "https://open.spotify.com/track/1aetqDOKuP3eNttOcgFc0Y",
+    "title": "مافيش فايدة",
+    "text": "With the band Cheeses of Mexico we've released an EP called 'مافيش فايدة' last in 2015. Clicking on this link will send you through to Spotify to listen to it.",
+    "preview": "./assets/mafishfayda.jpg"
   },
   {
-    "name": "youtube",
-    "url": "https://open.spotify.com/track/1aetqDOKuP3eNttOcgFc0Y"
+    "name": "caulfield",
+    "title": "Caulfield",
+    "url": "https://open.spotify.com/track/1aetqDOKuP3eNttOcgFc0Y",
+    "text": "One of the singles of our 'مافيش فايدة' EP. We shot the video with House in da Field productions",
+    "preview": "./assets/caulfield.jpg"
+  },
+  {
+    "name": "elvis",
+    "title": "pull-me-tender",
+    "url": "https://www.npmjs.com/package/pull-me-tender/",
+    "text": "I am the maintainer and creator of the pull-me-tender command line tool.\nIt helps you to keep track of open pull-requests on projects you're collaborating on.",
+    "preview": "./assets/elvis.png"
+  },
+  {
+    "name": "nes-small",
+    "title": "Talks",
+    "url": "https://www.youtube.com/watch?v=WRSRVdLQ_-k",
+    "text": "In July of 2016 I did a weird talk on programming the NES with assembly in JavaScript, you can find it here.",
+    "preview": "./assets/ruhrjs.png"
   }
 ]

@@ -16,8 +16,8 @@ var Thing = require('./thing')
 var constants = require('./constants')
 
 function Head () {
-  this.x = (constants.WINDOW_WIDTH - 200) * Math.random()
-  this.y = (constants.WINDOW_HEIGHT - 200) * Math.random()
+  this.x = (constants.WINDOW_WIDTH - 200) * Math.random() + 100
+  this.y = (constants.WINDOW_HEIGHT - 200) * Math.random() + 100
   xDir = (Math.random() < 0.49) ? -1 : 1
   yDir = (Math.random() < 0.49) ? -1 : 1
 
@@ -27,8 +27,8 @@ function Head () {
   // initiate sprite with head textures
   this.sprite = new PIXI.Sprite(headTextures[0])
   // center the sprite's anchor point
-  this.sprite.anchor.x = 0.5
-  this.sprite.anchor.y = 0.5
+  this.sprite.anchor.x = 0.0
+  this.sprite.anchor.y = 0.0
   // move the sprite to the center of the screen
   this.sprite.position.x = this.x
   this.sprite.position.y = this.y
@@ -52,6 +52,13 @@ Head.prototype.update = function () {
   var oldX = parseFloat(this.x)
   var oldY = parseFloat(this.y)
 
+  if (this.y < 0) {
+    this.y = 10
+  }
+  if (this.y > constants.WINDOW_HEIGHT) {
+    this.y = constants.WINDOW_HEIGHT - 20
+  }
+
   if (this.x < 0 + constants.PADDING ||
       this.x > constants.WINDOW_WIDTH - constants.PADDING) {
     this.xSpeed = -this.xSpeed
@@ -66,8 +73,41 @@ Head.prototype.update = function () {
   this.y = this.y + this.ySpeed
   this.sprite.position.x = this.x
   this.sprite.position.y = this.y
+  this.sprite.anchor.x = 0.5
+  this.sprite.anchor.y = 0.5
+
+  if (this.body) {
+    this.body.position = this.sprite.position
+  }
 }
 
+Head.prototype.move = function (keyCode) {
+  switch (parseInt(keyCode)) {
+    case 38:
+    if (this.ySpeed > -3) {
+      this.ySpeed--
+    }
+    break
+    case 40:
+    if (this.ySpeed < 3) {
+      this.ySpeed++
+    }
+    break
+    case 37:
+    if (this.xSpeed > -3) {
+      this.xSpeed--
+    }
+    break
+    case 39:
+    if (this.xSpeed < 3) {
+      this.xSpeed++
+    }
+    break
+    default:
+    console.log(keyCode)
+    break
+  }
+}
 
 /**
  * animate - super shitty animation with a timeout. Don't ever use this
