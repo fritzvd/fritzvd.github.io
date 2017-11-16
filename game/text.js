@@ -1,3 +1,5 @@
+var PIXI = require('pixi.js')
+
 function createRichText (text, x, y, options, scale) {
   if (!options) {
     options = {}

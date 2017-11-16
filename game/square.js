@@ -1,3 +1,4 @@
+var PIXI = require('pixi.js')
 var colors = [
   0xDD00DD,
   0xDDD,

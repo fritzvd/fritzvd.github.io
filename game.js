@@ -1,5 +1,5 @@
 require('./game.scss')
-require('./node_modules/pixi.js/bin/pixi.min.js')
+// require('./node_modules/pixi.js/dist/pixi.js')
 // require pixi, it's not really working any other way so.. meh..
 // 
 var backgroundColors = require('./game/bgColors')

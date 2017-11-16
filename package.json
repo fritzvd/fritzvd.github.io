@@ -27,7 +27,7 @@
     "glslify-loader": "^1.0.2",
     "ify-loader": "^1.0.3",
     "json-loader": "^0.5.4",
-    "node-sass": "^3.8.0",
+    "node-sass": "^3.13.1",
     "raw-loader": "^0.5.1",
     "sass-loader": "^3.2.3",
     "style-loader": "^0.13.1",
@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "matter-js": "^0.10.0",
-    "pixi.js": "^4.0.0-rc3",
+    "pixi.js": "^4.6.0",
     "skeleton-scss": "git+https://github.com/whatsnewsaes/Skeleton-Sass.git"
   }
 }

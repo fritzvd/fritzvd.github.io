@@ -1,3 +1,4 @@
+var PIXI = require('pixi.js')
 var createDialogueText = require('./text').createDialogueText
 var createRichText = require('./text').createRichText
 

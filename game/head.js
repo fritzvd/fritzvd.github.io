@@ -1,4 +1,4 @@
-
+var PIXI = require('pixi.js')
 /**
  * Head - returns a head with a 2 sprite 'animation'
  * with some helper functions.

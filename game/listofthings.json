@@ -26,5 +26,12 @@
     "url": "https://www.youtube.com/watch?v=WRSRVdLQ_-k",
     "text": "In July of 2016 I did a weird talk on programming the NES with assembly in JavaScript, you can find it here.",
     "preview": "./assets/ruhrjs.png"
+  },
+  {
+    "name": "d6-small",
+    "title": "D6 Character Creation",
+    "url": "http://fritzvd.com/d6-rpg",
+    "text": "A little app to generate characters for the OpenD6 rpg system",
+    "preview": "./assets/l.png"
   }
 ]

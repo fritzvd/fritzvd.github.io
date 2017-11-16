@@ -1,3 +1,4 @@
+var PIXI = require('pixi.js')
 var constants = require('./constants')
 
 var renderer = PIXI.autoDetectRenderer(constants.WINDOW_WIDTH, constants.WINDOW_HEIGHT, {

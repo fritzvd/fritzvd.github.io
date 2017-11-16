@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
   color: white;
-  font-family: sans;
+  font-family: sans-serif;
   background: #333;
 }
 
@@ -32,17 +32,13 @@ ul li {
   a {
     color: white;
     text-decoration: none;
-    &:hover {
-      color: #ddd;
-      // transition: color ease-in 0.5s;
-    }
-    &:active {
-      color: #ddd;
-      // transition: color ease-in 0.5s;
-    }
     &:visited {
-      color: #ddd;
-      // transition: color ease-in 0.5s;
+      color: white;
+      transition: color ease-in 0.1s;
+    }
+    &:hover {
+      color: #999;
+      transition: color ease-in 0.1s;
     }
   }
 }

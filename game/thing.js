@@ -1,3 +1,5 @@
+var PIXI = require('pixi.js')
+
 var constants = require('./constants')
 var World = require('matter-js').World
 var Bodies = require('matter-js').Bodies
