@@ -14,7 +14,7 @@ function PhysicsObject(xIn, yIn, scaleIn, r) {
   y = yIn
   r = r || 30
   scale = (Math.random() * scaleIn) + scaleIn
-  var box = Bodies.circle(x, y, r)
+  var box = Bodies.rectangle(x, y, r)
   World.add(engine.world, [box])
 
   // bodies.push(box)

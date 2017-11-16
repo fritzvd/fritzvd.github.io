@@ -12,7 +12,7 @@ var normal = function () {
 
 function Dialogue (width, height, padding) {
   var x = 240
-  var y = 200
+  var y = 180
   this.width = width
   this.height = height
 
