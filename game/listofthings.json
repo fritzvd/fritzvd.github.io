@@ -50,9 +50,9 @@
   },
   {
     "name": "han_university",
-    "title": "HAN Applied University",
+    "title": "HAN University of Applied Sciences",
     "url": "https://han.nl",
-    "text": "In 2016 I started as a lecturer at the HAN Applied University to teach HBO-ICT the Dutch equivalent to a Bachelor of Software Engineering.",
+    "text": "In 2016 I started as a lecturer at the HAN University of Applied Sciences to teach HBO-ICT the Dutch equivalent to a Bachelor of Software Engineering.",
     "preview": "./assets/han_university.png"
   },{
     "name": "who",
