@@ -81,25 +81,26 @@ Head.prototype.update = function () {
   }
 }
 
+const maxSpeed = 10;
 Head.prototype.move = function (keyCode) {
   switch (parseInt(keyCode)) {
     case 38:
-    if (this.ySpeed > -3) {
+    if (this.ySpeed > -maxSpeed) {
       this.ySpeed--
     }
     break
     case 40:
-    if (this.ySpeed < 3) {
+    if (this.ySpeed < maxSpeed) {
       this.ySpeed++
     }
     break
     case 37:
-    if (this.xSpeed > -3) {
+    if (this.xSpeed > -maxSpeed) {
       this.xSpeed--
     }
     break
     case 39:
-    if (this.xSpeed < 3) {
+    if (this.xSpeed < maxSpeed) {
       this.xSpeed++
     }
     break

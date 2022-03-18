@@ -48,7 +48,7 @@ function createDialogueText(text, x, y, options) {
       fontSize: 16,
       fontStyle : '',
       fontFamily: 'Arial',
-      fill : '#FFF',
+      fill : '#000',
       stroke : '#DDD',
       strokeThickness : 0,
       dropShadow : false,
@@ -56,7 +56,7 @@ function createDialogueText(text, x, y, options) {
       dropShadowAngle : 0,
       dropShadowDistance : 0,
       wordWrap : true,
-      wordWrapWidth : 440
+      wordWrapWidth : 250
   }
 
   Object.keys(options).forEach(function (key) {

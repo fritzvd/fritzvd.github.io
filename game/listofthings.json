@@ -40,5 +40,31 @@
     "url": "http://fritzvd.com/d6-rpg",
     "text": "A little app to generate characters for the OpenD6 rpg system. It's built with React/Redux. Also to teach myself both of those properly. Another completely non-important thing I did.",
     "preview": "./assets/d6.png"
+  },
+  {
+    "name": "small_utrechtjs",
+    "title": "UtrechtJS",
+    "url": "https://www.meetup.com/Utrecht-JavaScript-Meetup/",
+    "text": "Together with a friend I founded and co-hosted the Utrecht JS meetup. We held meetings and always tried to get a diverse crowd of speakers.",
+    "preview": "./assets/small_utrechtjs.png"
+  },
+  {
+    "name": "han_university",
+    "title": "HAN Applied University",
+    "url": "https://han.nl",
+    "text": "In 2016 I started as a lecturer at the HAN Applied University to teach HBO-ICT the Dutch equivalent to a Bachelor of Software Engineering.",
+    "preview": "./assets/han_university.png"
+  },{
+    "name": "who",
+    "title": "WHO COVID-19 Whatsapp Statistics",
+    "url": "https://who.int",
+    "text": "For the WHO I collaborated on a small segment of the Whatsapp Response by creating a microservice that would poll an ArcGIS server for statistics about new COVID-19 patients and deaths.",
+    "preview": "./assets/who.png"
+  },{
+    "name": "gunyama",
+    "title": "Gunyama",
+    "url": "https://www.youtube.com/watch?v=WHxZKyIX2ZI",
+    "text": "As the new lead singer for the musical formation Gunyama we performed as part of a contest voor the Bevrijdingsfestival Utrecht.",
+    "preview": "./assets/gunyama.png"
   }
 ]

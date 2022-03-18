@@ -1,4 +1,5 @@
 var PIXI = require('pixi.js')
+const fgColors = require('./fgColors')
 var createDialogueText = require('./text').createDialogueText
 var createRichText = require('./text').createRichText
 
@@ -11,8 +12,8 @@ var normal = function () {
 }
 
 function Dialogue (width, height, padding) {
-  var x = 240
-  var y = 180
+  var x = 280
+  var y = 200
   this.width = width
   this.height = height
 
@@ -23,7 +24,8 @@ function Dialogue (width, height, padding) {
   }
 
   var graphics = new PIXI.Graphics()
-  graphics.beginFill(0xDD00DD, 0.8)
+  var randomInt = parseInt(Math.random() * fgColors.length)
+  graphics.beginFill(fgColors[randomInt], 0.8)
   graphics.drawRect(x, y, width, height); // drawRect(x, y, width, height)
   graphics.endFill();
 

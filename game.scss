@@ -20,7 +20,7 @@ canvas {
 
 nav {
   background: #333;
-  padding-bottom: 8px;
+  padding: 8px 0;
   width: 100%;
   text-align: center;
 }
@@ -28,6 +28,7 @@ nav {
 ul li {
   list-style: none;
   display: inline;
+  margin: 0 10px;
 
   a {
     color: white;

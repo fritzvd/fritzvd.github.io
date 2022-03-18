@@ -1,8 +1,9 @@
 var PIXI = require('pixi.js')
 var constants = require('./constants')
+var bgColors = require('./bgColors')
 
 var renderer = PIXI.autoDetectRenderer(constants.WINDOW_WIDTH, constants.WINDOW_HEIGHT, {
-  backgroundColor : 0x77404F
+  backgroundColor : bgColors[0]
 })
 
 var stage = new PIXI.Container()
