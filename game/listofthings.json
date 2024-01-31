@@ -1,7 +1,7 @@
 [
   {
     "name": "gone",
-    "url": "https://cheesesofmexico.com/boringstranger/gone",
+    "url": "https://cheesesofmexico.com/boringstranger/gone?fritzvd.com=true",
     "title": "gone",
     "text": "As Boring Stranger I still write some songs here and there.",
     "preview": "./assets/gone.png"
@@ -12,6 +12,13 @@
     "title": "blue skies",
     "text": "As a solo musician I still write some songs here and there.",
     "preview": "./assets/blue-skies.png"
+  },
+  {
+    "name": "chom",
+    "url": "https://cheesesofmexico.com/links/?fritzvd=true",
+    "title": "cheeses of mexico",
+    "text": "This is my band: Cheeses of Mexico. We've done a lot of gigs, but put down our guitars in 2016. We recently picked them up again, come hear us play!",
+    "preview": "./assets/chom.png"
   },
   {
     "name": "spotify",
@@ -61,13 +68,15 @@
     "url": "https://han.nl",
     "text": "In 2016 I started as a lecturer at the HAN University of Applied Sciences to teach HBO-ICT the Dutch equivalent to a Bachelor of Software Engineering.",
     "preview": "./assets/han_university.png"
-  },{
+  },
+  {
     "name": "who",
     "title": "WHO COVID-19 Whatsapp Statistics",
     "url": "https://who.int",
     "text": "For the WHO I collaborated on a small segment of the Whatsapp Response by creating a microservice that would poll an ArcGIS server for statistics about new COVID-19 patients and deaths.",
     "preview": "./assets/who.png"
-  },{
+  },
+  {
     "name": "gunyama",
     "title": "Gunyama",
     "url": "https://www.youtube.com/watch?v=WHxZKyIX2ZI",
